@@ -10,27 +10,24 @@ function getIt(){
 
 function frameIt(){
   $('img').on('load', function(){
-  //actions you want to happen
+    $('img').addClass('tasty')
 });
 }
 
 function pressIt(){
-  $(document).on('keypress', function(key){
+  $('#typing').on('keypress', function(key){
     if(key.which == 71){
     return alert ('G key was pressed')
     }
-  }
+  })
 }
 
 function submitIt(){
   $("form").on("submit", function() {
-  if ($( "input:first" ).val() === "correct") {
     alert('your form is going to be submitted now');
-    return;
+    ;
   }
-  alert("you entered the wrong value");
-  return;
-});
+  );
 }
 
 });
